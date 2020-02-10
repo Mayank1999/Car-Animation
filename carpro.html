@@ -1,0 +1,450 @@
+<html>
+	<head>
+		<title>WD PROJECT</title>
+		<style>
+			*
+			{
+				margin: 0;
+				padding: 0;
+			}
+			@keyframes bgcolor {
+    	0%{
+        	background-color: #333333;
+    	}
+
+ 	  	5%{
+    		    background-color: #000033;
+   			}
+
+   		10%{
+    		    background-color:  #ff8888;
+   			}
+
+   		15%{
+    		    background-color: #ff8566;
+   			}
+
+   		20%{
+    		    background-color: #4dffff;
+   			}
+
+   		25%{
+    		    background-color: #ccefff;
+   			}
+
+      30%{
+            background-color: #4dffff;
+        }
+   			
+   		35%{
+    		    background-color: #ff8566;
+   			}
+   			
+   		40%{
+    		    background-color:  #ff8888;
+   			}
+   			
+   		45%{
+    		    background-color: #000033;
+   			}
+
+   		50%{
+    		    background-color: #333333;
+   			}				
+
+		100%{
+    		    background-color: #333333;
+   			}				
+		}
+
+		body{
+ 		  animation: bgcolor 120s infinite;
+		}
+		.circle {
+        width: 100px;
+        height: 80px;
+        border-radius: 100%;
+        background-color: yellow;
+        position: relative;
+        animation-name: example;
+        animation-delay: 0s;
+        animation-duration: 120s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes example {
+        0% {
+          left:0%; 
+          top:270px;
+          background-color: #333333;
+        }
+        5% {
+          left:10%; 
+          top:203px;
+          background-color: #000033;
+        }
+        10% {
+          left:20%; 
+          top:140px;
+          background-color: #cc0000;
+        }
+        15% {
+          left:30%; 
+          top:80px;
+          background-color: #ff0000;
+        }
+        20% {
+          left: 40%; 
+          top:26px;
+          background-color: #ffcc00;
+        }
+        25% {
+          left: 50%; 
+          top:0px;
+          background-color: #ffd633;
+        }
+        30% {
+          left: 60%; 
+          top:26px;
+          background-color: #ffd633;
+        }
+        35% {
+          left: 70%; 
+          top:80px;
+          background-color: #ff0000;
+        }
+        40% {
+          left: 80%; 
+          top:140px;
+          background-color: #cc0000;
+        }
+        45% {
+          left: 90%; 
+          top:203px;
+          background-color: #000033;
+        }
+        50% {
+          left:0%; 
+          top:270px;
+          background-color: #333333;
+        }
+        55% {
+          left:10%; 
+          top:203px;
+          background-color: #ffff99;
+        }
+        60% {
+          left:20%; 
+          top:140px;
+          background-color: #ffff99;
+        }
+        65% {
+          left:30%; 
+          top:80px;
+          background-color: #e6e6e6;
+        }
+        70% {
+          left: 40%; 
+          top:26px;
+          background-color: #f2f2f2;
+        }
+        75% {
+          left: 50%; 
+          top:0px;
+          background-color: #f2f2f2;
+        }
+        80% {
+          left: 60%; 
+          top:26px;
+          background-color: #f2f2f2;
+        }
+        85% {
+         left: 70%; 
+          top:80px;
+          background-color: #e6e6e6;
+        }
+        90% {
+          left: 80%; 
+          top:140px;
+          background-color: #ffff99;
+        }
+        95% {
+          left: 90%; 
+          top:203px;
+          background-color: #ffff99;
+        }
+        100% {
+          left:100%; 
+          top:270px;
+          background-color: #333333;
+        }
+      }
+			.road
+			{
+				height: 200px;
+				width: 500%;
+				display: block;
+				background-image: url(road.jpg);
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: 1;
+				background-repeat: repeat-x;
+			}
+			@keyframes road
+			{
+				100%{
+					transform: translateX(-3400px);
+				}
+			}
+			.city
+			{
+				height: 250px;
+				width: 500%;
+				background-image: url(city.png);
+				position: absolute;
+				bottom: 200px;
+				left: 0;
+				right: 0;
+				display: block;
+				z-index: 1;
+				background-repeat: repeat-x; 
+			}
+			@keyframes city
+			{
+				100%{
+					transform: translateX(-1400px);
+				}
+			}
+			.car
+			{
+				width: 400px;
+				left: 50%;
+				bottom: 100px;
+				transform: translateX(-50%);
+				position: absolute;
+				z-index: 2; 
+			}
+			.carimg
+			{
+				width: 100%;
+			}
+			@keyframes car
+			{
+				100%{
+					transform: translateY(-3px);
+				}
+				50%{
+					transform: translateY(3px);
+				}
+				0%{
+					transform: translateY(-3px);
+				}
+			}
+			.wheels
+			{
+				left: 50%;
+				bottom: 75px;
+				transform: translateX(-50%);
+				position: absolute;
+				z-index: 2;
+			}
+			.wheels img
+			{
+				width: 73px;
+				height: 73px;
+			}
+			.rearwheels
+			{
+				left: -165px;
+				position: absolute;
+			}
+			.frontwheels
+			{
+				left: 80px;
+				position: absolute;
+			}
+			@keyframes wheels
+			{
+				100%{
+					transform: rotate(360deg);
+				}
+			}
+
+			.start {
+ 				display: inline-block;
+  				padding: 15px 25px;
+  				font-size: 10px;
+  				cursor: pointer;
+  				text-align: center;
+  				text-decoration: none;
+  				outline: none;
+  				color: #fff;
+  				background-color: #808080;
+  				border: none;
+  				border-radius: 15px;
+  				box-shadow: 0 9px #999;
+  				opacity: 0.7;
+			}
+
+			.start:hover {background-color: #262626}
+
+			.start:active {
+  				background-color: #262626;
+  				box-shadow: 0 5px #666;
+  				transform: translateY(4px);
+			}
+
+			.slow {
+ 				display: inline-block;
+  				padding: 15px 25px;
+  				font-size: 10px;
+  				cursor: pointer;
+  				text-align: center;
+  				text-decoration: none;
+  				outline: none;
+  				color: #fff;
+  				background-color: #808080;
+  				border: none;
+  				border-radius: 15px;
+  				box-shadow: 0 9px #999;
+  				opacity: 0.7;
+			}
+
+			.slow:hover {background-color: #262626}
+
+			.slow:active {
+  				background-color: #262626;
+  				box-shadow: 0 5px #666;
+  				transform: translateY(4px);
+			}
+
+			.medium {
+ 				display: inline-block;
+  				padding: 15px 25px;
+  				font-size: 10px;
+  				cursor: pointer;
+  				text-align: center;
+  				text-decoration: none;
+  				outline: none;
+  				color: #fff;
+  				background-color: #808080;
+  				border: none;
+  				border-radius: 15px;
+  				box-shadow: 0 9px #999;
+  				opacity: 0.7;
+			}
+
+			.medium:hover {background-color: #262626}
+
+			.medium:active {
+  				background-color: #262626;
+  				box-shadow: 0 5px #666;
+  				transform: translateY(4px);
+			}
+
+			.fast {
+ 				display: inline-block;
+  				padding: 15px 25px;
+  				font-size: 10px;
+  				cursor: pointer;
+  				text-align: center;
+  				text-decoration: none;
+  				outline: none;
+  				color: #fff;
+  				background-color: #808080;
+  				border: none;
+  				border-radius: 15px;
+  				box-shadow: 0 9px #999;
+  				opacity: 0.7;
+			}
+
+			.fast:hover {background-color: #262626}
+
+			.fast:active {
+  				background-color: #262626;
+  				box-shadow: 0 5px #666;
+  				transform: translateY(4px);
+			}
+
+			.stop1 {
+ 				display: inline-block;
+  				padding: 15px 25px;
+  				font-size: 10px;
+  				cursor: pointer;
+  				text-align: center;
+  				text-decoration: none;
+  				outline: none;
+  				color: #fff;
+  				background-color: #808080;
+  				border: none;
+  				border-radius: 15px;
+  				box-shadow: 0 9px #999;
+  				opacity: 0.7;
+			}
+
+			.stop1:hover {background-color: #262626}
+
+			.stop1:active {
+  				background-color: #262626;
+  				box-shadow: 0 5px #666;
+  				transform: translateY(4px);
+			}
+		</style>
+	</head>
+	<body>
+			<div class="circle"></div>
+			<div id="road" class="road"></div> 
+			<button id="start" class="start">START CAR</button>
+			<button id="slow" class="slow">MINIMUM SPEED</button>
+			<button id="medium" class="medium">MODEST SPEED</button>
+			<button id="fast" class="fast">MAXIMUM SPEED</button>
+			<button id="stop1" class="stop1">Stop CAR</button>
+			<div id="city" class="city"></div>
+			<div class="car">
+				<img id="carimg" class="carimg" src="car.png">
+				<div class="wheels">
+					<img id="rearwheels" src="wheel.png" class="rearwheels">
+					<img id="frontwheels" src="wheel.png" class="frontwheels">
+				</div>
+			</div>
+		<script>
+				start.addEventListener("click", function(){
+					road.style.animation = "road 15s linear infinite";
+					city.style.animation = "city 40s linear infinite";
+					carimg.style.animation = "car 2s linear infinite";
+					rearwheels.style.animation = "wheels 2s linear infinite";
+					frontwheels.style.animation = "wheels 2s linear infinite";
+				});
+				slow.addEventListener("click", function(){
+					road.style.animation = "road 5s linear infinite";
+					city.style.animation = "city 20s linear infinite";
+					carimg.style.animation = "car 1s linear infinite";
+					rearwheels.style.animation = "wheels 1s linear infinite";
+					frontwheels.style.animation = "wheels 1s linear infinite";
+				});
+				medium.addEventListener("click", function(){
+					road.style.animation = "road 2.5s linear infinite";
+					city.style.animation = "city 10s linear infinite";
+					carimg.style.animation = "car 0.5s linear infinite";
+					rearwheels.style.animation = "wheels 0.5s linear infinite";
+					frontwheels.style.animation = "wheels 0.5s linear infinite";
+				});
+				fast.addEventListener("click", function(){
+					road.style.animation = "road 0.5s linear infinite";
+					city.style.animation = "city 2s linear infinite";
+					carimg.style.animation = "car 0.1s linear infinite";
+					rearwheels.style.animation = "wheels 0.1s linear infinite";
+					frontwheels.style.animation = "wheels 0.1s linear infinite";
+				});
+				stop1.addEventListener("click", function(){
+					road.style.animation = "";
+					city.style.animation = "";
+					carimg.style.animation = "";
+					rearwheels.style.animation = "";
+					frontwheels.style.animation = "";
+				});
+		</script>
+	</body>
+</html>

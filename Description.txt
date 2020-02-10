@@ -1,0 +1,11 @@
+Running Car Animation through CSS.
+
+Description:-
+
+1. The Car is running on the road with bouncing effect.
+2. The wheels of the car are rotating which gives the effect of the car moving.
+3. The road is an image which is rotating in background with a particular speed.
+4. The city is also an image which is rotating in background with a particular speed.
+5. The background color is changing which gives the effects of dawn, morning ,afternoon, evening, dusk and night skies.
+6. A sun and moon is rising and setting with color changing effects according to the time of background.
+7. There are five buttons to set speeds of car into slow, moderate and fast and also to start and stop the car. 
